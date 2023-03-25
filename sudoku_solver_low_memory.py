@@ -1,3 +1,5 @@
+from sudoku_base_solver import SudokuSolver
+
 """
 37. Sudoku Solver
 https://leetcode.com/problems/sudoku-solver/
@@ -33,17 +35,16 @@ Explanation: The input board is shown above and the only valid solution is shown
 from typing import List
 from collections import defaultdict 
 class Solution:
-    def solveSudoku(self, board: List[List[str]]) -> None:
+    def solve(self) -> None:
         """
         Do not return anything, modify board in-place instead.
 
-        Solution:
-        1. 
+        This solution optimizes memory over speed
         """
-
+        board = self.board
         def backtrack(row, col):
             nonlocal board
-            # get next position 
+            # get next position that is "."
             while board[row][col] != ".":
                 col += 1
                 if col == 9: 
@@ -55,7 +56,7 @@ class Solution:
             for k in range(1,10):
                 if self.isValid(board, row, col, str(k)):
                     board[row][col] = str(k) # convert to string for comparison to strings in board
-                    if backtrack(row,col):
+                    if backtrack(row,col): # We've overwritten "." for current row, so no need to move forward. backtrack will move us forward on next call
                         return True 
 
             board[row][col] = "."
@@ -68,21 +69,12 @@ class Solution:
         row:int, 
         col:int, 
         candidate:str)->bool:
-        if any([board[row][j] == candidate for j in range(9) if j != col]): return False # check col
-        if any([board[j][col] == candidate for j in range(9) if j != row]): return False # check row
+        if any([board[row][j] == candidate for j in range(9) if j != col]): 
+            return False # check col
+        if any([board[j][col] == candidate for j in range(9) if j != row]): 
+            return False # check row
         br,bc = 3*(row//3), 3*(col//3)
-        if any([board[i][j] == candidate for i in range(br, br+3) for j in range(bc,bc+3)]): return False # square
+        if any([board[i][j] == candidate for i in range(br, br+3) for j in range(bc,bc+3)]): 
+            return False # square
         return True
 
-
-
-
-
-            
-        
-        
-
-        
-
-
-        
