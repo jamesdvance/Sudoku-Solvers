@@ -1,6 +1,12 @@
 # Sudoku-Solvers
 Exploring the different algorithms to solve Sudoku
 
+## Instructions
+
+### Installing gym-sudoku From Forked Repo
+Use until PR accepted in forked repo
+1. 
+
 ## Background
 [Soduku](https://en.wikipedia.org/wiki/Sudoku) is a fun puzzle game. 
 
@@ -19,7 +25,7 @@ Solving Sukoku is a popular Leetcode [problem](https://leetcode.com/problems/sud
 ### Reinforcement Learning
 
 
-## Resources
+## References
 
 * [Sudoku As Graph Coloring Problem](https://www.linkedin.com/pulse/solve-your-sudoku-graph-coloring-problem-alireza-soroudi/?trk=eml-email_series_follow_newsletter_01-hero-1-title_link&midToken=AQET4HYp_zAXXw&fromEmail=fromEmail&ut=2RbmToAhecnGI1)
 * [Sudoku As A Linear Program](https://www.coin-or.org/PuLP/CaseStudies/a_sudoku_problem.html)
