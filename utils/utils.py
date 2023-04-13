@@ -28,7 +28,7 @@ def check_solution(grid):
 		for j in range(N):
 			# If a case is not filled, the sudoku is not finished
 			if grid[i][j] == 0:
-				return unfinished
+				return "Unfinished"
 
 			n = N//3
 			iOffset = i//n*n
@@ -40,9 +40,9 @@ def check_solution(grid):
 			uniqueInSquare = countItem(square, grid[i, j]) == 1
 
 			if not (uniqueInRow and uniqueInCol and uniqueInSquare):
-				return error
+				return "Error"
 
-	return resolved
+	return "Solved"
 
 
 # Count the number of time the item appears in a vector
