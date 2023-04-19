@@ -8,11 +8,9 @@ Exploring the different algorithms to solve Sudoku
 2. pip install ./gym-sudoku
 
 ## Background
-[Soduku](https://en.wikipedia.org/wiki/Sudoku) is a fun puzzle game. 
-
-"Sudoku is played on a grid of 9 x 9 spaces. Within the rows and columns are 9 “squares” (made up of 3 x 3 spaces). <br/>
+[Soduku](https://en.wikipedia.org/wiki/Sudoku) is played on a grid of 9 x 9 spaces. Within the rows and columns are 9 “squares” (made up of 3 x 3 spaces). <br/>
 Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9, <br/>
-without repeating any numbers within the row, column or square."
+without repeating any numbers within the row, column or square.
 
 ## Algorithms
 
@@ -26,6 +24,8 @@ without repeating any numbers within the row, column or square."
 ### Reinforcement Learning
 * [Sudoku-Gym Original](https://github.com/wcheung-code/sudoku-gym)
 * [Reinforcement Learning For Constraint Satisfaction Game Agents](https://arxiv.org/ftp/arxiv/papers/2102/2102.06019.pdf)
+* [Sudoku with Deep Q Learning](https://github.com/adityapujari98/Solving-Sudoku-using-Deep-Q-learning/blob/master/boardenv.py)
+    * Seems implausible
 
 ### Supervised Learning
 * [Can Convolutional Neural Networks Crack Sudoku Puzzles?](https://github.com/Kyubyong/sudoku)
