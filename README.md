@@ -12,7 +12,12 @@ Exploring the different algorithms to solve Sudoku
 Each row, column and square (9 spaces each) needs to be filled out with the numbers 1-9, <br/>
 without repeating any numbers within the row, column or square.
 
-## Algorithms
+## Solutions
+[Depth First Search (Memory Optimized)](algorithms/dfs_backtracking_low_memory.py)
+<br/>
+[Linear Programming](algorithms/linear_program.py)
+
+## Resources
 
 ### Depth First Search
 * [Sudoku Leetcode problem](https://leetcode.com/problems/sudoku-solver/)
